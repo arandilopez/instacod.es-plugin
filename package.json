@@ -1,8 +1,8 @@
 {
   "name": "instacod.es-plugin",
   "main": "./lib/instacod.es-plugin",
-  "version": "0.0.0",
-  "description": "A short description of your package",
+  "version": "0.1.0",
+  "description": "A simple Atom package to upload code to Instacod.es",
   "activationEvents": ["instacod.es-plugin:toggle"],
   "repository": "https://github.com/atom/instacod.es-plugin",
   "license": "MIT",
