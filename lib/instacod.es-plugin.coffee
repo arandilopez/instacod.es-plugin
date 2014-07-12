@@ -17,11 +17,11 @@ module.exports =
     editor = atom.workspace.activePaneItem.getActiveEditor()
     selection = editor.getSelection()
 
-    open "http://InstaCod.es/?post_code="+ selection +"&post_lang="
+    @open "http://InstaCod.es/?post_code="+ selection +"&post_lang="
 
   upload_file: ->
     editor = atom.workspace.activePaneItem.getActiveEditor()
     file_text = editor.getText()
 
 
-    open "http://InstaCod.es/?post_code="+ file_text +"&post_lang="
+    @open "http://InstaCod.es/?post_code="+ file_text +"&post_lang="
