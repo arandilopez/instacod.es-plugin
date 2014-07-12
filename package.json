@@ -1,0 +1,14 @@
+{
+  "name": "instacod.es-plugin",
+  "main": "./lib/instacod.es-plugin",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "activationEvents": ["instacod.es-plugin:toggle"],
+  "repository": "https://github.com/atom/instacod.es-plugin",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}

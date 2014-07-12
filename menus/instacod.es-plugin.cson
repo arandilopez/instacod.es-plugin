@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable instacod.es-plugin': 'instacod.es-plugin:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'instacod.es-plugin'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'instacod.es-plugin:toggle' }
+      ]
+    ]
+  }
+]
