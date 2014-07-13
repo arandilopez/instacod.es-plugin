@@ -1,17 +1,17 @@
-#Instacod.esPluginView = require './instacod.es-plugin-view'
+
 open = require 'open'
+path = require 'path'
+
 module.exports =
   instacod.esPluginView: null
 
   activate: (state) ->
-    #@instacod.esPluginView = new Instacod.esPluginView(state.instacod.esPluginViewState)
     atom.workspaceView.command "instacod:upload-selection", => @upload_selection()
+    atom.workspaceView.command "instacod:upload-file", => @upload_file()
 
   deactivate: ->
-    #@instacod.esPluginView.destroy()
 
   serialize: ->
-    #instacod.esPluginViewState: @instacod.esPluginView.serialize()
 
   upload_selection: ->
     editor = atom.workspace.activePaneItem.getActiveEditor()
@@ -23,5 +23,6 @@ module.exports =
     editor = atom.workspace.activePaneItem.getActiveEditor()
     file_text = editor.getText()
 
-
-    @open "http://InstaCod.es/?post_code="+ file_text +"&post_lang="
+    file_name = editor.getTitle()
+    syntax = @path file_name
+    @open "http://InstaCod.es/?post_code="+ file_text +"&post_lang=" + syntax
