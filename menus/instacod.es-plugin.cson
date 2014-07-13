@@ -5,11 +5,20 @@
 
 'menu': [
   {
-    'label': 'Packages'
+    'label': 'File'
     'submenu': [
-      'label': 'instacod.es-plugin'
+      'label': 'Instacod.es'
       'submenu': [
-        { 'label': 'Toggle', 'command': 'instacod.es-plugin:toggle' }
+        { 'label': 'Upload File', 'command': 'instacod:upload-file' }
+      ]
+    ]
+  },
+  {
+    'label': 'Selection'
+    'submenu': [
+      'label': 'Instacod.es'
+      'submenu': [
+        {'label': 'Upload Selection', 'command': 'instacod:upload-selection' }
       ]
     ]
   }
