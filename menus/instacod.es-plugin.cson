@@ -1,7 +1,8 @@
 # See https://atom.io/docs/latest/creating-a-package#menus for more details
 'context-menu':
   '.overlayer':
-      'Enable instacod.es-plugin': 'instacod.es-plugin:toggle'
+      'Upload File': 'instacod:upload-file'
+      'Upload Selection': 'instacod:upload-selection'
 
 'menu': [
   {
