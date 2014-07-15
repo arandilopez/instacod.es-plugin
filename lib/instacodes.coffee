@@ -1,15 +1,14 @@
-InstacodesView = require './instacodes-view'
-
 module.exports =
   instacodesView: null
 
   activate: (state) ->
-    @instacodesView = new InstacodesView(state.instacodesViewState)
-    atom.workspaceView.command "instacod:upload_selection", => @upload_selection()
-    atom.workspaceView.command "instacod:upload_file", => @upload_file()
+    atom.workspaceView.command "instacodes:upload_selection", => @upload_selection()
 
-  deactivate: ->
-    @instacodesView.destroy()
-
-  serialize: ->
-    instacodesViewState: @instacodesView.serialize()
+  upload_selection: ->
+    # console.log('uploading...')
+    editor = atom.workspace.getActiveEditor()
+    selection = editor.getSelection().getText()
+    path = require 'path'
+    grammar_name = editor.getGrammar().name
+    open = require 'open'
+    open "http://InstaCod.es/?post_code=#{selection}&post_lang=#{grammar_name}"
