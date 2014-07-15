@@ -1,7 +1,7 @@
 # See https://atom.io/docs/latest/creating-a-package#menus for more details
 'context-menu':
   '.overlayer':
-      'Upload Selection to InstaCod.es': 'instacodes:upload_selection'
+      'Upload selection to instacod.es': 'instacodes:upload_selection'
 
 'menu': [
   {
@@ -10,15 +10,6 @@
       'label': 'Instacod.es'
       'submenu': [
         { 'label': 'Upload File', 'command': 'instacodes:upload_file' }
-      ]
-    ]
-  },
-  {
-    'label': 'Selection'
-    'submenu': [
-      'label': 'Instacodes'
-      'submenu': [
-        {'label': 'Upload Selection', 'command': 'instacodes:upload_selection' }
       ]
     ]
   }
