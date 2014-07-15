@@ -9,4 +9,3 @@
 # https://atom.io/docs/latest/advanced/keymaps
 '.workspace':
   'ctrl-alt-o': 'instacodes-plugin:upload_selection'
-  'ctrl-alt-0': 'instacodes-plugin:upload_file'
