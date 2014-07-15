@@ -8,7 +8,7 @@ In Atom, open Preferences > Packages, search for InstaCodes package. Once it fou
 
 ## Manual installation
 
-You can install the latest Emmet version manually from console:
+You can install the latest Instacodes version manually from console:
 
     cd ~/.atom/packages
     git clone https://github.com/arandilopez/instacod.es-plugin
