@@ -14,7 +14,7 @@
   "main": "./lib/instacodes",
   "version": "0.0.0",
   "description": "A simple Atom package to upload code to Instacod.es",
-  "activationEvents": ["instacodes:upload-file", "instacodes:upload-selection"],
+  "activationEvents": ["instacodes:upload_file", "instacodes:upload_selection"],
   "repository": "https://github.com/atom/instacod.es-plugin",
   "license": "MIT",
   "engines": {

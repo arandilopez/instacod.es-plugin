@@ -2,13 +2,9 @@
 
 module.exports =
 class InstacodesView extends View
-  @content: ->
-    @div class: 'instacodes overlay from-top', =>
-      @div "The Instacodes package is Alive! It's ALIVE!", class: "message"
-
   initialize: (serializeState) ->
-    atom.workspaceView.command "instacodes:upload-selection", => @upload_selection()
-    atom.workspaceView.command "instacodes:upload-file", => @upload_file()
+    atom.workspaceView.command "instacodes:upload_selection", => @upload_selection()
+    atom.workspaceView.command "instacodes:upload_file", => @upload_file()
 
 
   # Returns an object that can be retrieved when package is activated
