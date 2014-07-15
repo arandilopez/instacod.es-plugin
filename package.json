@@ -12,7 +12,7 @@
   ],
   "name": "instacodes-plugin",
   "main": "./lib/instacodes",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "A simple Atom package to upload code to Instacod.es",
   "activationEvents": [ "instacodes:upload_selection" ],
   "repository": "https://github.com/arandilopez/instacod.es-plugin",
