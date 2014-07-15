@@ -3,14 +3,14 @@
   '.overlayer':
       'Upload selection to instacod.es': 'instacodes:upload_selection'
 
-'menu': [
-  {
-    'label': 'Packages'
-    'submenu': [
-      'label': 'Instacod.es'
-      'submenu': [
-        { 'label': 'Upload File', 'command': 'instacodes:upload_file' }
-      ]
-    ]
-  }
-]
+#'menu': [
+#  {
+#    'label': 'Packages'
+#    'submenu': [
+#      'label': 'Instacod.es'
+#      'submenu': [
+#        { 'label': 'Upload File', 'command': 'instacodes:upload_file' }
+#      ]
+#    ]
+#  }
+#]
