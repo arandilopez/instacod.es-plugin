@@ -10,10 +10,7 @@ In Atom, open Preferences > Packages, search for InstaCodes package. Once it fou
 
 You can install the latest Instacodes version manually from console:
 
-    cd ~/.atom/packages
-    git clone https://github.com/arandilopez/instacod.es-plugin
-    cd instacod.es-plugin
-    npm install
+    $ apm install instacodes-plugin
     # Then restart Atom editor.
 
 ![Demo](http://cl.ly/image/1H0u042U3X3M/instacodes.gif)

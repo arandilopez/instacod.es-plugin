@@ -1,0 +1,10 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Upload selection to Instacod.es",
+        "command": "instacodes:upload_selection"
+      }
+    ]
+  }
+}
